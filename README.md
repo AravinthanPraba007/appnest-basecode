@@ -1,2 +1,0 @@
-# appnest-basecode
-appnest-basecode
