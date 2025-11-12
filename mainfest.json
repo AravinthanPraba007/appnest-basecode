@@ -1,0 +1,32 @@
+{
+  "platform-version": "2.0",
+  "product": {
+    "surveysparrow": {
+      "location": {
+        "full_page_app": {
+          "url": "index.html",
+          "icon": "icon.svg"
+        }
+      },
+      "functions": {
+        "uploadToS3": {
+          "timeout": 10
+        },
+        "workerApi": {
+          "timeout": 10
+        }
+      }
+    }
+  },
+  "whitelisted-domains": [
+    "https://(.*).signsparrow.com(.*)",
+    "https://(.*).surveysparrow.com(.*)",
+    "http://(.*).surveysparrow.test(.*)"
+  ],
+  "dependencies": {
+    "axios": "0.27.2"
+  },
+  "engines": {
+    "node": "22"
+  }
+}
