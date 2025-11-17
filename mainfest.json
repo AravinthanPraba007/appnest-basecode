@@ -1,32 +1,29 @@
 {
-  "platform-version": "2.0",
+  "platform-version": "2.0-AI",
   "product": {
-    "surveysparrow": {
+    "signsparrow": {
       "location": {
         "full_page_app": {
           "url": "index.html",
           "icon": "icon.svg"
         }
       },
-      "functions": {
-        "uploadToS3": {
-          "timeout": 10
-        },
-        "workerApi": {
-          "timeout": 10
+      "events": {
+        "onSubmissionComplete": {
+          "handler": "onSubmissionComplete"
         }
       }
     }
   },
+  
   "whitelisted-domains": [
     "https://(.*).signsparrow.com(.*)",
     "https://(.*).surveysparrow.com(.*)",
     "http://(.*).surveysparrow.test(.*)"
   ],
-  "dependencies": {
-    "axios": "0.27.2"
-  },
   "engines": {
-    "node": "22"
-  }
+    "node": "18.20.6",
+    "ssdk": "0.3.7"
+  },
+  "dependencies": {}
 }

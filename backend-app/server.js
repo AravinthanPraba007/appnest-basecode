@@ -1,10 +1,9 @@
+const { onContactCreate, onSubmissionComplete } = require('./eventFunction');
+const { function1, function2 } = require('./smiFunction');
 
-const function1 = () => {
-    console.log("This is function 1");
+module.exports = {
+  onContactCreate,
+  onSubmissionComplete,
+  function1,
+  function2,
 };
-
-const function2 = () => {
-    console.log("This is function 2");
-};
-
-module.exports = { function1, function2 };
