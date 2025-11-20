@@ -9,6 +9,14 @@ function App() {
     getClient().then((client) => {
       console.log('Client initialized:', client);
     });
+    
+    getClient()
+      .then(() => {
+        console.log('Client initialized:', client);
+      })
+      .catch((error) => {
+        console.error('Error initializing client:', error);
+      });
   }, []);
 
   const [count, setCount] = useState(0);

@@ -30,6 +30,10 @@
   padding: 2em;
 }
 
+.body {
+  background-color: white;
+}
+
 .read-the-docs {
   color: #888;
 }
