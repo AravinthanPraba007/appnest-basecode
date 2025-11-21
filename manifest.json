@@ -19,7 +19,10 @@
   "whitelisted-domains": [
     "https://(.*).signsparrow.com(.*)",
     "https://(.*).surveysparrow.com(.*)",
-    "http://(.*).surveysparrow.test(.*)"
+    "http://(.*).surveysparrow.test(.*)",
+    "https://hooks\\.slack\\.com(/.*)?",
+    "https://api\\.surveysparrow\\.com(/.*)?",
+    "https://api\\.signsparrow\\.com(/.*)?"
   ],
   "engines": {
     "node": "18.20.6",
